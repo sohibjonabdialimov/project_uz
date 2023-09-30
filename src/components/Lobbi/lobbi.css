@@ -65,7 +65,7 @@
     padding: 0 25px;
   }
   .lobbi_wrap {
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
   .lobbi__section {
     width: 100%;
@@ -107,7 +107,7 @@
     grid-template-areas:
       "one"
       "two";
-    padding: 50px 20px;
+    padding: 40px 20px;
     row-gap: 50px;
   }
   .lobbi__section {

@@ -138,7 +138,7 @@ function Hero() {
         </div> */}
         <div className="max-w-full py-20 pb-40 sm:pb-36 sm:pt-36 lg:pb-40 lg:pt-32">
           <div className="sm:mb-2">
-            <div className="lg:px-20 sm:px-8 relative rounded-full text-start px-8 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <div className="lg:px-20 sm:px-8 relative rounded-full text-start py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               MIRABAD AVENUE
             </div>
           </div>

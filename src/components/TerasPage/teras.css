@@ -65,7 +65,7 @@
     padding: 0 25px;
   }
   .teras_wrap {
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
   .teras__section {
     width: 100%;
@@ -99,7 +99,7 @@
 
 @media (max-width: 1300px) {
   .teras_wrap {
-    padding: 100px 100px;
+    padding: 80px 100px;
   }
 }
 @media (max-width: 1024px) {
@@ -107,7 +107,7 @@
     grid-template-areas:
       "two"
       "one";
-    padding: 50px 20px;
+    padding: 30px 20px;
     row-gap: 50px;
   }
   .teras__section {

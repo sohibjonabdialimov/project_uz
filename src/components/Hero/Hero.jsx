@@ -148,7 +148,7 @@ function Hero() {
               formati
             </h1>
 
-            <div className="mt-16 sm:mt-20 flex flex-col gap-y-5 sm:flex-row sm:items-center sm:gap-x-6">
+            <div className="mt-16 sm:mt-20">
               {/* <p
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 lg:py-5 lg:px-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -162,12 +162,13 @@ function Hero() {
                 4 двора без машин с зонами отдыха
               </p>
               */}
-              <button
+              {/* <button
                 href="#"
                 className="anim_btn rounded-md bg-indigo-600 px-3.5 py-2.5 lg:py-5 lg:px-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Click me
-              </button>
+              </button> */}
+              <a href="#" class="anim_button anim_button_float">Click Here</a>
             </div>
             {/* <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui

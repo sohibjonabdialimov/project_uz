@@ -1,0 +1,34 @@
+.form h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding: 0 160px;
+  margin-bottom: 60px;
+}
+
+.form{
+  padding: 0 14rem;
+}
+.form label{
+  font-size: 16px;
+  color: #444;
+}
+.form input, .form textarea{
+  box-shadow: 10px 5px #00000051;
+  outline: none;
+  resize: none;
+  color: #555;
+}
+.form button{
+  box-shadow: 5px 5px #7d9ffd;
+}
+@media (max-width: 800px) {
+  .form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+  .form{
+    padding: 0 1.25rem;
+  }
+}

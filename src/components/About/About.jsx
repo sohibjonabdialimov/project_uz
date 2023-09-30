@@ -1,14 +1,29 @@
 import React from "react";
 import "./about.css";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <div id="about_page" className="about_section px-6 sm:px-16 lg:px-10">
       <div className="about_page_wrap lg:px-28">
-        <h2>Loyiha haqida</h2>
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+        >
+          Loyiha haqida
+        </motion.h2>
         <div className="about_page_content">
-          <div className="about_page_desc">
+          <motion.div
+            initial={{ x: "-100%" }}
+            whileInView={{ x: "0" }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="about_page_desc"
+          >
             <p>
               Mirabad Avenue — уникальный проект. Это первая резиденция
               премиум-класса в Узбекистане, являющаяся совместным проектом с
@@ -29,8 +44,14 @@ const About = () => {
               центральных улиц на один уровень с Елисейскими полями, Арбатом и
               Пятой Авеню.
             </p>
-          </div>
-          <div className="about_page_info">
+          </motion.div>
+          <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{ x: "0" }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="about_page_info"
+          >
             <div className="about_page_info_wrap">
               <div className="project_info_title">
                 <h3>Двор на платформе</h3>
@@ -54,7 +75,7 @@ const About = () => {
                 <p>Длина по периметру резиденции превысит 2 км.</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

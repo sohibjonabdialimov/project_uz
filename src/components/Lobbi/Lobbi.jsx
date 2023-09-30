@@ -6,10 +6,17 @@ import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
 import img13 from "../../assets/img13.jpg";
 import img16 from "../../assets/img16.jpg";
+import { motion } from "framer-motion";
 const Lobbi = () => {
   return (
-    <div className="lobbi_wrap">
-      <div className="lobbi_content">
+    <div className="lobbi_wrap" id="lobbi">
+      <motion.div
+        initial={{ x: "-100%" }}
+        whileInView={{ x: "0" }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="lobbi_content"
+      >
         <h3 className="section_title section_first_title">LOBBI</h3>
         <h3 className="section_title">VA KONSYERJ XIZMATI</h3>
         <p className="section_paragrph">
@@ -21,8 +28,14 @@ const Lobbi = () => {
           tozalashga buyurtma berishdan tortib, mashinani etkazib berish va
           mehmonlarni kutib olishgacha.
         </p>
-      </div>
-      <div className="lobbi_carousel">
+      </motion.div>
+      <motion.div
+        initial={{ x: "100%" }}
+        whileInView={{ x: "0" }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="lobbi_carousel"
+      >
         <div
           id="lobbi__section"
           className="carousel slide lobbi_page"
@@ -111,7 +124,7 @@ const Lobbi = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

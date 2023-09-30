@@ -3,16 +3,18 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import phone from "../../assets/phone-solid.svg";
 import logo from "../../assets/logo_uz.png";
+import "./hero.css";
+import { motion } from "framer-motion";
 const navigation = [
   { name: "Loyiha haqida", href: "#about_page" },
-  { name: "Xususiyati", href: "#" },
-  { name: "Market joylashuvi", href: "#" },
-  { name: "Kompaniya", href: "#" },
+  { name: "Shaxsiy teraslar", href: "#personal" },
+  { name: "Lobbi va konsyers xizmati", href: "#lobbi" },
+  { name: "Manzil", href: "#address" },
+  { name: "Biz bilan bog'laning", href: "#contact" },
 ];
 
 function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-white project_wrap">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -23,11 +25,7 @@ function Hero() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-12 w-auto lg:h-16"
-                src={logo}
-                alt=""
-              />
+              <img className="h-12 w-auto lg:h-16" src={logo} alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -46,7 +44,6 @@ function Hero() {
                 key={item.name}
                 href={item.href}
                 className="text-sm font-semibold leading-6 text-white"
-               
               >
                 {item.name}
               </a>
@@ -76,11 +73,7 @@ function Hero() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  className="h-12 w-auto"
-                  src={logo}
-                  alt=""
-                />
+                <img className="h-12 w-auto" src={logo} alt="" />
               </a>
               <button
                 type="button"
@@ -98,7 +91,9 @@ function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      onClick={() => {setMobileMenuOpen(false)}}
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                      }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -136,8 +131,13 @@ function Hero() {
             }}
           />
         </div> */}
-        <div className="max-w-full py-20 pb-40 sm:pb-36 sm:pt-36 lg:pb-40 lg:pt-32">
-          <div className="sm:mb-2">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-full py-24 pb-44 sm:pb-40 sm:pt-40 lg:pb-44 lg:pt-36"
+        >
+          <div className="sm:mb-2 py-3">
             <div className="lg:px-20 sm:px-8 relative rounded-full text-start py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               MIRABAD AVENUE
             </div>
@@ -149,7 +149,7 @@ function Hero() {
             </h1>
 
             <div className="mt-16 sm:mt-20 flex flex-col gap-y-5 sm:flex-row sm:items-center sm:gap-x-6">
-              <p
+              {/* <p
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 lg:py-5 lg:px-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
@@ -161,12 +161,13 @@ function Hero() {
               >
                 4 двора без машин с зонами отдыха
               </p>
-              <p
+              */}
+              <button
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 lg:py-5 lg:px-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="anim_btn rounded-md bg-indigo-600 px-3.5 py-2.5 lg:py-5 lg:px-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Квартиры с видом на закрытый внутренний двор
-              </p>
+                Click me
+              </button>
             </div>
             {/* <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
@@ -188,7 +189,7 @@ function Hero() {
               </a>
             </div> */}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,11 +1,18 @@
 import React from "react";
 import "./footer.css";
 import logo from "../../assets/logo_uz.png";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <footer>
       <div className="footer_wrap">
-        <div className="footer_logo">
+        <motion.div
+          initial={{ x: "-100%" }}
+          whileInView={{ x: "0" }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="footer_logo"
+        >
           <img src={logo} alt="" />
           <div className="footer_social">
             <a
@@ -105,8 +112,14 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-        </div>
-        <div className="footer_info">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="footer_info"
+        >
           <p>
             <span>Manzil: </span>Oʻzbekiston, Toshkent, koʻch. Mirobod, 60 yosh
           </p>
@@ -116,9 +129,13 @@ const Footer = () => {
           <p>
             <span>Email: </span> info@dahotashkent.uz
           </p>
-        </div>
+        </motion.div>
 
-        <iframe
+        <motion.iframe
+          initial={{ x: "100%" }}
+          whileInView={{ x: "0" }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.1894230841352!2d69.28296592800073!3d41.30534698855992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b969660fd4b%3A0xe31095572f95deef!2sSeoul%20Plaza!5e1!3m2!1sru!2s!4v1674237610290!5m2!1sru!2s"
           width="100%"
           style={{ border: 0, margin: "auto" }}

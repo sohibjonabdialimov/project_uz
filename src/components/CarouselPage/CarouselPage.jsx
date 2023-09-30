@@ -5,12 +5,17 @@ import img3 from "../../assets/4.jpg";
 import img4 from "../../assets/6.jpg";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import { motion } from "framer-motion";
 
 import "./carousel.css";
 const CarouselPage = () => {
   return (
     <>
-      <div
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
         id="hero__section"
         className="carousel slide carousel_page"
         data-bs-ride="carousel"
@@ -93,7 +98,7 @@ const CarouselPage = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

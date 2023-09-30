@@ -4,6 +4,9 @@
   margin-bottom: 80px;
   margin-top: 50px;
 }
+.map{
+  padding: 20px 0;
+}
 .map h2{
   font-size: 42px;
   font-weight: 700;
@@ -41,6 +44,7 @@
     padding: 0 50px;
     margin-bottom: 20px;
   }
+
   .map svg{
     width: 45px;
   }

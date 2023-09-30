@@ -5,11 +5,18 @@ import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
 import img13 from "../../assets/img13.jpg";
 import img16 from "../../assets/img16.jpg";
+import { motion } from "framer-motion";
 import "./teras.css";
 const TerasPage = () => {
   return (
-    <div className="teras_wrap">
-      <div className="teras_carousel">
+    <div className="teras_wrap" id="personal">
+      <motion.div
+        initial={{ x: "-100%" }}
+        whileInView={{ x: "0" }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="teras_carousel"
+      >
         <div
           id="teras__section"
           className="carousel slide teras_page"
@@ -98,8 +105,14 @@ const TerasPage = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="teras_content">
+      </motion.div>
+      <motion.div
+        initial={{ x: "100%" }}
+        whileInView={{ x: "0" }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="teras_content"
+      >
         <h3 className="section_title">SHAXSIY TERASLAR</h3>
         <p className="section_paragrph">
           Ko'chmas mulk bozoridagi birinchi va noyob taklif. 9-qavatda kvartira
@@ -107,7 +120,7 @@ const TerasPage = () => {
           Turar joyning yana bir yangiligi - lift orqali shaxsiy kirish
           imkoniyatiga ega penthausli minoralar.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

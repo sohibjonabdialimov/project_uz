@@ -5,6 +5,7 @@ import CarouselPage from "./components/CarouselPage/CarouselPage";
 import Footer from "./components/Footer/Footer";
 import Form from "./components/Form/Form";
 import Hero from "./components/Hero/Hero";
+import Houses from "./components/Houses/Houses";
 import Lobbi from "./components/Lobbi/Lobbi";
 import Map from "./components/Map/Map";
 import TerasPage from "./components/TerasPage/TerasPage";
@@ -18,6 +19,7 @@ function App() {
     <Lobbi />
     <Address />
     <Map />
+    <Houses />
     <Form />
     <Footer />
     

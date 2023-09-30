@@ -6,4 +6,5 @@
 html, body{
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }

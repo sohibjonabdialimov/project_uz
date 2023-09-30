@@ -10,7 +10,7 @@ const Map = () => {
       <h2>Manzil</h2>
       <motion.div initial={{ x: "-100%" }}
         whileInView={{ x: "0" }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 0.7 }}
         viewport={{ once: true }}  className="map_wrap">
         <div className="map_item">
           <svg

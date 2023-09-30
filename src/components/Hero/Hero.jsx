@@ -134,7 +134,7 @@ function Hero() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.7 }}
           className="max-w-full py-24 pb-44 sm:pb-40 sm:pt-40 lg:pb-44 lg:pt-36"
         >
           <div className="sm:mb-2 py-3">

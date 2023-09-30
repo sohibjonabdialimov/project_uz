@@ -7,7 +7,7 @@ const Address = () => {
     <div className="address_wrap">
       <motion.div initial={{ x: "-100%" }}
         whileInView={{ x: "0" }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7 }}
         viewport={{ once: true }} className="address_content">
         <h3 className="section_title">Manzil</h3>
         <p className="section_paragrph">
@@ -21,7 +21,7 @@ const Address = () => {
       </motion.div>
       <motion.div initial={{ x: "100%" }}
         whileInView={{ x: "0" }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7 }}
         viewport={{ once: true }} className="address_carousel">
         <img src={img} alt="" />
       </motion.div>

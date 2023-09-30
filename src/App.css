@@ -1,0 +1,40 @@
+.project_wrap{
+  background: url("./assets/houses.jfif") no-repeat;
+  background-size: cover;
+}
+img{
+  object-fit: cover;
+}
+button{
+  outline: none;
+}
+.section_title{
+  color: #C09A5D;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.section_paragrph{
+  color: #444;
+  font-size: 20px;
+  line-height: 35px;
+}
+.section_first_title{
+  margin-bottom: 5px;
+}
+@media (max-width: 800px) {
+  .section_title{
+    color: #C09A5D;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .section_first_title{
+    margin-bottom: 5px;
+  }
+  .section_paragrph{
+    color: #444;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

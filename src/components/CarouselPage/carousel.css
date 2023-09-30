@@ -1,0 +1,84 @@
+.hero__img img {
+  width: 100%;
+  height: 600px;
+}
+.carousel_page {
+  padding: 0 80px;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.carousel_button_group {
+  position: absolute;
+  top: -60px;
+  right: 150px;
+}
+.carousel-control-prev {
+  background-color: rgb(48, 48, 52) !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.carousel-control-next {
+  background-color: rgb(48, 48, 52) !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: block;
+  width: 23px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .carousel_page {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+ 
+  .carousel_button_group {
+    right: 75px;
+  }
+  .hero__img img {
+    width: 100%;
+    height: 400px;
+  }
+  .carousel-control-prev {
+    background-color: rgb(48, 48, 52) !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .carousel-control-next {
+    background-color: rgb(48, 48, 52) !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: block;
+    width: 16px;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,36 @@
+.address_wrap {
+  display: grid;
+  grid-template-areas: "one one two two two";
+  padding: 100px 100px 100px 160px;
+  column-gap: 80px;
+}
+.address_carousel {
+  grid-area: two;
+}
+.address_content {
+  grid-area: one;
+}
+
+@media (max-width: 800px) {
+  .address_content {
+    padding: 0 25px;
+  }
+  .address_wrap {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .address_wrap {
+    padding: 100px 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .address_wrap {
+    grid-template-areas:
+      "one"
+      "two";
+    padding: 50px 20px;
+    row-gap: 50px;
+  }
+}

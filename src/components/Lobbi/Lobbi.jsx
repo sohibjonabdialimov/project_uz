@@ -13,7 +13,7 @@ const Lobbi = () => {
       <motion.div
         initial={{ x: "-100%" }}
         whileInView={{ x: "0" }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         viewport={{ once: true }}
         className="lobbi_content"
       >
@@ -32,7 +32,7 @@ const Lobbi = () => {
       <motion.div
         initial={{ x: "100%" }}
         whileInView={{ x: "0" }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         viewport={{ once: true }}
         className="lobbi_carousel"
       >

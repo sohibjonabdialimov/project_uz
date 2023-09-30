@@ -11,7 +11,7 @@ const About = () => {
         <motion.h2
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
           Loyiha haqida
@@ -20,7 +20,7 @@ const About = () => {
           <motion.div
             initial={{ x: "-100%" }}
             whileInView={{ x: "0" }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="about_page_desc"
           >
@@ -48,7 +48,7 @@ const About = () => {
           <motion.div
             initial={{ x: "100%" }}
             whileInView={{ x: "0" }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="about_page_info"
           >

@@ -14,7 +14,7 @@ const CarouselPage = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
         id="hero__section"
         className="carousel slide carousel_page"

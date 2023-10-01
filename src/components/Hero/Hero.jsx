@@ -19,13 +19,13 @@ function Hero() {
     <div className="bg-white project_wrap">
       <header className="header">
         <nav
-          className="flex items-center justify-between px-6 py-3 lg:px-8"
+          className="flex items-center justify-between px-6 py-2 lg:px-12"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img className="h-12 w-auto lg:h-16" src={logo} alt="" />
+              <img className="h-12 w-auto lg:h-14" src={logo} alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -38,7 +38,7 @@ function Hero() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="nav_gap hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -69,7 +69,7 @@ function Hero() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-r from-gray-700 to-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -77,7 +77,7 @@ function Hero() {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -94,7 +94,7 @@ function Hero() {
                       onClick={() => {
                         setMobileMenuOpen(false);
                       }}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                     >
                       {item.name}
                     </a>
@@ -103,7 +103,7 @@ function Hero() {
                 <div className="py-2 text-center">
                   <div
                     href="#"
-                    className="flex align-middle gap-2 -mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="flex align-middle gap-2 -mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                   >
                     <ion-icon
                       style={{ fontSize: "23px" }}

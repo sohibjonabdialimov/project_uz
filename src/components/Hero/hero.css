@@ -1,6 +1,7 @@
 .anim_btn {
   box-shadow: 10px 20px 20px rgb(223, 223, 240);
 }
+
 .header{
   position: fixed;
   left: 0;
@@ -28,7 +29,7 @@
   color: #1f4141;
 }
 .anim_button_float {
-  animation: float 1s linear alternate infinite;
+  animation: float 0.8s linear alternate infinite;
 }
 
 @keyframes float {
@@ -36,6 +37,11 @@
     transform: translateY(-px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-12px);
+  }
+}
+@media (max-width: 1200px) {
+  .project_wrap .nav_gap{
+    column-gap: 1.2rem;
   }
 }

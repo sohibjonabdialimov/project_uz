@@ -147,6 +147,29 @@
     margin-bottom: 20px;
     gap: 5px;
   }
+  .plan_info p {
+    font-size: 16px;
+    color: #bb9256;
+    position: relative;
+    margin-left: 22px;
+    margin-bottom: 15px;
+  }
+  .plan_wrap h2 {
+    color: #222;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .plan_info p::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #bb9256;
+    left: -20px;
+    top: 7px;
+  }
   .plan_btn_group button{
     padding: 0.3rem 0.7rem;
     box-shadow: 2px 2px 3px;

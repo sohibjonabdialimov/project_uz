@@ -17,9 +17,9 @@ function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="bg-white project_wrap">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="header">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between px-6 py-3 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -168,7 +168,7 @@ function Hero() {
               >
                 Click me
               </button> */}
-              <a href="#" class="anim_button anim_button_float">Click Here</a>
+              <a href="#plan" className="anim_button anim_button_float">Click Here</a>
             </div>
             {/* <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui

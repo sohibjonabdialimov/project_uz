@@ -1,7 +1,14 @@
 .anim_btn {
   box-shadow: 10px 20px 20px rgb(223, 223, 240);
 }
-
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .anim_button {
   position: relative;
   color: white;

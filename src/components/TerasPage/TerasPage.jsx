@@ -106,6 +106,9 @@ const TerasPage = () => {
           </div>
         </div>
       </motion.div>
+
+
+      
       <motion.div
         initial={{ x: "100%" }}
         whileInView={{ x: "0" }}

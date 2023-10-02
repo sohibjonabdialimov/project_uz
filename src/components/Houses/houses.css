@@ -1,6 +1,71 @@
+.house1_page {
+  position: relative;
+}
+.house1_carousel_button_group {
+  position: absolute;
+  bottom: -40px;
+  right: 60px;
+}
+.house2_page {
+  position: relative;
+}
+.house2_carousel_button_group {
+  position: absolute;
+  bottom: -40px;
+  right: 60px;
+}
+.house3_page {
+  position: relative;
+}
+.house3_carousel_button_group {
+  position: absolute;
+  bottom: -40px;
+  right: 60px;
+}
+.house4_page {
+  position: relative;
+}
+.house4_carousel_button_group {
+  position: absolute;
+  bottom: -40px;
+  right: 60px;
+}
+.carousel-control-prev {
+  background-color: rgb(48, 48, 52) !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.carousel-control-next {
+  background-color: rgb(48, 48, 52) !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: block;
+  width: 23px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+
+
 .plan {
   background-color: #c9a47e;
-  padding: 100px 14rem;
+  padding: 100px 14rem 150px 14rem;
 }
 .plan_content {
   display: grid;
@@ -48,6 +113,7 @@
   /* box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15); */
   transition: 0.5s all ease-in-out;
   color: #fff;
+  /* filter: drop-shadow(5px 10px 10px #fa8602); */
   background: #dea25c;
   box-shadow: 5px 5px 2px #dea25c, 5px 5px 10px #dea25c,
     5px 5px 20px #dea25c, 5px 5px 30px #dea25c;
@@ -138,6 +204,7 @@
 @media (max-width: 800px) {
   .plan {
     padding: 50px 1.25rem;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 875px) {
@@ -193,6 +260,9 @@
     "two";
     gap: 50px;
     align-items: center;
+  }
+  .plan_wrap{
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 380px) {

@@ -37,7 +37,6 @@
 
 .plan_btn {
   position: relative;
-  color: white;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
@@ -46,20 +45,26 @@
   border: 2px solid white;
   border-radius: 1000px;
   padding: 12px 25px;
-  box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+  /* box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15); */
   transition: 0.5s all ease-in-out;
-  background-color: #DEA25C;
+  color: #fff;
+  background: #dea25c;
+  box-shadow: 5px 5px 2px #dea25c, 5px 5px 10px #dea25c,
+    5px 5px 20px #dea25c, 5px 5px 30px #dea25c;
 }
 .plan_btn:hover {
   cursor: pointer;
   background: white;
   color: #1f4141;
+  box-shadow: 0 0 0 #fff;
+  color: #dea25c;
+  border: 2px solid #dea25c;
 }
 
-.plan_btn_wiggle {
+/* .plan_btn_wiggle {
   animation: wiggle 4s 2s infinite;
-}
-
+} */
+/* 
 @keyframes wiggle {
   5%,
   50% {
@@ -86,7 +91,7 @@
   40% {
     transform: scale(1.15) rotate(0);
   }
-}
+} */
 
 .plan_info {
   margin-bottom: 40px;

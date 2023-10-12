@@ -7,8 +7,8 @@ import "./hero.css";
 import { motion } from "framer-motion";
 const navigation = [
   { name: "Loyiha haqida", href: "#about_page" },
-  { name: "Shaxsiy teraslar", href: "#personal" },
-  { name: "Lobbi va konsyers xizmati", href: "#lobbi" },
+  { name: "Balkon", href: "#personal" },
+  { name: "Avtoparkovka va bolalar maydonchasi", href: "#lobbi" },
   { name: "Manzil", href: "#address" },
   { name: "Biz bilan bog'laning", href: "#contact" },
 ];
@@ -139,7 +139,7 @@ function Hero() {
         >
           <div className="sm:mb-2 py-3">
             <div className="lg:px-20 sm:px-8 relative rounded-full text-start py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              MIRABAD AVENUE
+              O'ZBEGIM TURAR JOY MAJMUASI
             </div>
           </div>
           <div className="text-start lg:px-20 sm:px-8">
@@ -168,7 +168,7 @@ function Hero() {
               >
                 Click me
               </button> */}
-              <a href="#plan" className="anim_button anim_button_float">Click Here</a>
+              <a href="#plan" className="anim_button anim_button_float">Ariza qoldirish</a>
             </div>
             {/* <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui

@@ -116,12 +116,9 @@ const TerasPage = () => {
         viewport={{ once: true }}
         className="teras_content"
       >
-        <h3 className="section_title">SHAXSIY TERASLAR</h3>
+        <h3 className="section_title">Balkon</h3>
         <p className="section_paragrph">
-          Ko'chmas mulk bozoridagi birinchi va noyob taklif. 9-qavatda kvartira
-          sotib olib, xaridor o'zining shaxsiy terasining egasiga aylanadi.
-          Turar joyning yana bir yangiligi - lift orqali shaxsiy kirish
-          imkoniyatiga ega penthausli minoralar.
+        Har biz xonadonda balkon mavjud. Xonadonarimizning barchasida balkon bo'ladi va umumiy amydoni 3-4 m2 bo'ladi. Balkondan shahar manzarasini, farzandlaringizni xavfsiz o'ynayatganini tomosha qilish imkoniyatiga egasiz.
         </p>
       </motion.div>
     </div>

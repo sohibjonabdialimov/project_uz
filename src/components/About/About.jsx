@@ -25,24 +25,13 @@ const About = () => {
             className="about_page_desc"
           >
             <p>
-              Mirabad Avenue — уникальный проект. Это первая резиденция
-              премиум-класса в Узбекистане, являющаяся совместным проектом с
-              британским архитектурным бюро Chapman Taylor.
+            Loyihamiz A va B blokdan iborat bo'lib, 2,8 gektarda qurilmoqda. Xonadonlarimiz 59.58m2 dan 90.64m2 gacha yani 1, 2 hamda 3 xonali xonadonlarimiz mavjud. Balkon qismining hajmi 3 4 m2 gacha yetadi.
             </p>
             <p>
-              Уникальность проекта не только в новаторском подходе к
-              проектированию, но и в новом формате использования пространства.
-              Например, для подавления уличного шума, двор резиденции будет
-              расположен на платформе, возвышающейся над землёй на 4 метра. Эта
-              же платформа послужит площадью для подземного паркинга жителей
-              резиденции. И подобных нововведений в резиденции масса.
+            Xonadonalrimizni 18 oygacha muddatli to'lovda xatid qilishingiz mumkin. 
             </p>
             <p>
-              Именно в Mirabad Avenue расположится первая в стране шопинг-авеню
-              по всей территории комплекса. Бутики, рестораны, салоны и шоурумы
-              создадут новый облик столицы, выводя одну из оживлённых
-              центральных улиц на один уровень с Елисейскими полями, Арбатом и
-              Пятой Авеню.
+            Undan tashqari majmuamizda Boshqaruv Servis Kompaniya ham mavjud bo'ladi. Tom qismi quyosh batareyalaridan iborat bo'ladi.
             </p>
           </motion.div>
           <motion.div
@@ -54,25 +43,24 @@ const About = () => {
           >
             <div className="about_page_info_wrap">
               <div className="project_info_title">
-                <h3>Двор на платформе</h3>
+                <h3>Bolalar maydonachasi</h3>
                 <p>
-                  Дворы возвышаются на 4 метра, под каждым — 2 уровня паркинга.
+                Farzandingiz uchun xavfsiz va zamonaviy bolalar maydonchasi mavjud boladi.
                 </p>
               </div>
             </div>
             <div className="about_page_info_wrap">
               <div className="project_info_title">
-                <h3>Двор-парк</h3>
+                <h3>Avtoparkovka</h3>
                 <p>
-                  Подобранные растения создадут особую эко-систему в каждом
-                  дворе.
+                Mashinangizni xavfsizligini o'ylagan holda biz avtoparkovka ham yaratdik.
                 </p>
               </div>
             </div>
             <div className="about_page_info_wrap">
               <div className="project_info_title">
-                <h3>Шопинг-авеню</h3>
-                <p>Длина по периметру резиденции превысит 2 км.</p>
+                <h3>18 oyli muddatli to'lov</h3>
+                <p>Xonadonlarimizni 18 oyli muddatli tolovga xarid qilish imkoniyatiga egasiz.</p>
               </div>
             </div>
           </motion.div>

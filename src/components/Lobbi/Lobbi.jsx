@@ -17,16 +17,13 @@ const Lobbi = () => {
         viewport={{ once: true }}
         className="lobbi_content"
       >
-        <h3 className="section_title section_first_title">LOBBI</h3>
-        <h3 className="section_title">VA KONSYERJ XIZMATI</h3>
+        <h3 className="section_title section_first_title">Avtoparkovka</h3>
+        <h3 className="section_title">va bolalar maydonchasi</h3>
         <p className="section_paragrph">
-          Har bir blokda mehmonlarni kutib olish va kvartiradan tashqarida qulay
-          muloqot qilish uchun alohida maydonga ega 150 m² qulay lobbi maydoni
-          mavjud. Xavfsizlikdan tashqari, mehmonlar va aholini qabulxonada
-          konsyerjlar kutib olishadi, ularga har qanday kundalik masalani hal
-          qilish ishonib topshirilishi mumkin - etkazib berish va kimyoviy
-          tozalashga buyurtma berishdan tortib, mashinani etkazib berish va
-          mehmonlarni kutib olishgacha.
+          Loyihamizda mashinangiz xavfsizligi uchun loyiha hovlisida
+          avtoparkovkalar mavjud bo'ladi. <br/> Farzandlaringiz uchun uchun esa
+          xavfsiz va zamonaviy bolalar maydonchasini barpo etamiz. Va siz
+          farzandlaringizdan xavotir olmasangiz ham bo'ladi.
         </p>
       </motion.div>
       <motion.div

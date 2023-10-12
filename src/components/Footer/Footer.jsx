@@ -135,14 +135,9 @@ const Footer = () => {
           initial={{ x: "100%" }}
           whileInView={{ x: "0" }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.1894230841352!2d69.28296592800073!3d41.30534698855992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b969660fd4b%3A0xe31095572f95deef!2sSeoul%20Plaza!5e1!3m2!1sru!2s!4v1674237610290!5m2!1sru!2s"
-          width="100%"
-          style={{ border: 0, margin: "auto" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
+          className="gmap_iframe" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} width="100%" src="https://maps.google.com/maps?width=2048&height=400&hl=en&q=Alpomish street, Kunishqala, Bukhara city, Bukhara Region, Uzbekistan &t=&z=14&ie=UTF8&iwloc=B&output=embed"
         />
+        {/* <iframe className="gmap_iframe" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} width="100%" src="https://maps.google.com/maps?width=2048&height=400&hl=en&q=Alpomish street, Kunishqala, Bukhara city, Bukhara Region, Uzbekistan &t=&z=14&ie=UTF8&iwloc=B&output=embed" /> */}
       </div>
     </footer>
   );
